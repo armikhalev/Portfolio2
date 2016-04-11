@@ -1,0 +1,311 @@
+/* Change the link color on hover */
+
+.navtop li:hover,
+.nav.navbar-nav li a:hover,
+.navbar .navbar-brand:hover {
+  background-color: #000;
+  color: #9ee340;
+}
+
+nav {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+a {
+  transition: color 0.3s ease-in-out;
+  -moz-transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+}
+
+ul {
+  background-color: #404040;
+}
+
+.nav.navbar-nav li a,
+.navbar-header .navbar-brand {
+  color: #fff;
+}
+
+/********* shrink navbar **********/
+
+nav .navtop a {
+  padding-bottom: 15px !important;
+  padding-top: 15px !important;
+  transition: all 0.5s ease;
+  -moz-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+}
+
+@media only screen and (min-width: 768px) {
+  nav.navtop.navbar.shrink {
+    margin: -10px;
+  }
+}
+
+nav.navtop.navbar.shrink a {
+  font-size: .9em;
+  padding-bottom: 10px !important;
+  padding-top: 20px !important;
+}
+
+
+/*********** Parallax *************/
+
+#page0 {
+  background: url('http://res.cloudinary.com/amikhalev/image/upload/v1460173756/main_banner.jpg') center center / cover no-repeat fixed;
+  padding: 25em 0 0 0;
+  margin: 0px;
+}
+
+.green-line {
+  background-color: #9ee340;
+  box-shadow: -1em 0 15em #000;
+  padding: 2em;
+}
+
+#page1 {
+  /*background: url('http://res.cloudinary.com/amikhalev/image/upload/v1455838820/meigetsu_in_temple.jpg') fixed;*/
+  background-color: #fff;
+  padding: 25em 0 5em 0;
+  margin: 0px;
+}
+
+.grey-line {
+  background-color: #7c7877;
+  box-shadow: -1em 0 15em #000;
+  padding: .1em;
+  color: #FFF;
+}
+
+#pageOneHalf {
+  background-color: #9ee340;
+  padding: 2em;
+  margin: 0px;
+}
+
+#pageOneHalf img {
+  width: 10em;
+  padding: 1em;
+}
+
+#page2 {
+  background: url('http://res.cloudinary.com/amikhalev/image/upload/v1460345088/damask_grey.jpg') fixed;
+  /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);*/
+  padding: 23em 0 5em 0;
+  margin: 0px;
+}
+
+#page3 {
+  background: url('http://res.cloudinary.com/amikhalev/image/upload/v1455836511/milk_and_coffee.jpg') fixed;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 25em 0 25em 0;
+  margin: 0px;
+}
+
+
+/************* Content ***************/
+.welcome {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  font-size: 9vw;
+
+  opacity: 0;
+  margin-top: 5em;
+
+  -webkit-transition: margin-top .5s, opacity .5s;
+     -moz-transition: margin-top .5s, opacity .5s;
+      -ms-transition: margin-top .5s, opacity .5s;
+       -o-transition: margin-top .5s, opacity .5s;
+          transition: margin-top .5s, opacity .5s;
+
+}
+
+.up {
+  opacity:1;
+  margin-top: 0em;
+}
+
+.middle {
+  margin-top: -18em;
+}
+
+.topper {
+  margin-top: -23em;
+}
+
+.well.zero {
+  background-color: rgba(245, 245, 245, 0.7);
+}
+
+.page-header {
+  border-color: #000;
+}
+
+.arrow-down {
+  margin-top: 10%;
+}
+
+.arrow-down:hover {
+  -webkit-filter: invert(100%); filter: invert(100%);
+}
+
+.social i {
+  padding: .5em;
+  font-size: 5em;
+  width: 2em;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+  color: #f00;
+}
+
+.avatar {
+  width: 380px;
+  margin-left: 5vw;
+}
+
+.about {
+  color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  /*background-color: rgba(245, 245, 245, 0.7);*/
+}
+
+.portfolio, .contact h1 {
+  color: #FFF;
+  /*font-family: 'Pacifico', cursive;*/
+}
+
+.projects {
+  margin-top: -20em;
+  position: relative;
+}
+
+.works {
+  color: #000;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+/************ Hover effect **********/
+/* Thanks to http://miketricking.github.io/dist/ */
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect h2 {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover h2 {
+  opacity: 1;
+}
+
+.well.well-sm.portfolio{
+    background: rgba(245, 245, 245, 0.7);
+    margin-top: 9em;
+}
+
+.contact.well{
+     background: rgba(245, 245, 245, 0.7);
+}
+
+/************** Footer ****************/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background-color: #404040;
+  color: #ffa;
+}
+.copyrt{
+  padding-top: 35px;
+}
+
+footer li{
+  display: inline;
+  float: right;
+}
+
+footer a{
+  display: block;
+  padding: 35px 15px;
+  color: #fff;
+}
+footer a:hover{
+  color: #0099CC;
+}
+
+@media only screen and (max-width: 768px){
+  /******************************/
+
+.copyrt{
+  padding: 5px;
+  margin: 0;
+}
+
+.navbar {
+     background: transparent;
+     border-color: transparent;
+}
+
+
+#page0 {
+  background: url('http://res.cloudinary.com/amikhalev/image/upload/v1460258896/small_main_banner.png') center center / cover no-repeat fixed;
+
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 25em 0 25em 0;
+  margin: 0px;
+}
+
+}

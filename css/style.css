@@ -75,26 +75,52 @@ nav.navtop.navbar.shrink a {
   margin: 0px;
 }
 
+.lines {
+  font-family: 'Oswald';
+  font-weight: lighter;
+}
+
 .grey-line {
   background-color: #7c7877;
   box-shadow: -1em 0 15em #000;
-  padding: .1em;
+  padding: 2em;
+  margin-top: 2em;
   color: #FFF;
 }
 
 #pageOneHalf {
   background-color: #9ee340;
   padding: 2em;
+  padding-bottom: 8em;
   margin: 0px;
 }
 
 #pageOneHalf img {
-  width: 10em;
+  width: 13em;
   padding: 1em;
 }
 
+#page1_5_first_row img {
+  margin-left: .1em;
+  margin-right: .1em;
+}
+
+#pageOneSix {
+  background-image: linear-gradient(#fff, #b5b5b5);
+  padding: 25em 0 25em 0;
+  margin-bottom: -2em;
+}
+
+.grey-blue-line {
+  background-color: #39393a;
+  box-shadow: -1em 0 15em #000;
+  padding: 2em;
+  margin-top: 2em;
+  color: #FFF;
+}
+
 #page2 {
-  background: url('http://res.cloudinary.com/amikhalev/image/upload/v1460345088/damask_grey.jpg') fixed;
+  background: url('http://res.cloudinary.com/amikhalev/image/upload/v1460863390/damask_vignette.jpg') center center / cover fixed;
   /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);*/
   padding: 23em 0 5em 0;
   margin: 0px;
@@ -187,7 +213,8 @@ nav.navtop.navbar.shrink a {
 }
 
 .projects {
-  margin-top: -20em;
+  margin-top: -23em;
+  padding: 1em;
   position: relative;
 }
 

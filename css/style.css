@@ -76,8 +76,9 @@ nav.navtop.navbar.shrink a {
 }
 
 .lines {
-  font-family: 'Oswald';
+  font-family: 'Open Sans Condensed';
   font-weight: lighter;
+  font-size: 5em;
 }
 
 .grey-line {
@@ -107,8 +108,12 @@ nav.navtop.navbar.shrink a {
 
 #pageOneSix {
   background-image: linear-gradient(#fff, #b5b5b5);
-  padding: 25em 0 25em 0;
+  padding: 0 0 10em 0;
   margin-bottom: -2em;
+}
+
+.certificates h1 {
+  padding: .5em;
 }
 
 .grey-blue-line {
@@ -127,12 +132,56 @@ nav.navtop.navbar.shrink a {
 }
 
 #page3 {
-  background: url('http://res.cloudinary.com/amikhalev/image/upload/v1455836511/milk_and_coffee.jpg') fixed;
+  /*background: url('http://res.cloudinary.com/amikhalev/image/upload/v1455836511/milk_and_coffee.jpg') fixed;*/
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
   padding: 25em 0 25em 0;
   margin: 0px;
 }
 
+/*contact-form*/
+.form-control {
+    border-color: black;
+    border-width: medium;
+}
+
+.form-control:focus {
+  border-color: #9ee340;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.has-error .form-control:focus {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+/*placeholder color*/
+/*
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #5C5555 !important;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+/*color: #5C5555 !important;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {  /* Firefox 19+ */
+/*color: #5C5555 !important;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color: #5C5555 !important;
+}*/
+
+/*extra large button*/
+.btn-xlarge {
+    padding: 15px 65px;
+    font-size: 23px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
 
 /************* Content ***************/
 .welcome {
@@ -207,9 +256,19 @@ nav.navtop.navbar.shrink a {
   /*background-color: rgba(245, 245, 245, 0.7);*/
 }
 
-.portfolio, .contact h1 {
+.portfolio {
   color: #FFF;
   /*font-family: 'Pacifico', cursive;*/
+}
+
+.contact h1 {
+  color: #000;
+}
+
+.formText {
+  font-size: 23px;
+  margin: .7em;
+  padding: 1.4em;
 }
 
 .projects {
@@ -221,6 +280,90 @@ nav.navtop.navbar.shrink a {
 .works {
   color: #000;
   font-family: 'Alegreya Sans', sans-serif;
+}
+
+/******** Hover effect for certificates *************/
+/* Thanks to http://miketricking.github.io/dist/ */
+
+.hoverCert {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hoverCert .overlayCert {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hoverCert:hover .overlayCert {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hoverCert img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hoverCert:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hoverCert h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hoverCert a, hoverCert p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hoverCert:hover a, .hoverCert:hover p, .hoverCert:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 /************ Hover effect **********/

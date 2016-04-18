@@ -141,7 +141,7 @@
 <section id="pageOneHalf">
   <div class="container text-center">
     <div class="row" id="page1_5_first_row">
-      <img style="width: 29em" src="http://res.cloudinary.com/amikhalev/image/upload/v1460343805/htmlcssjs.png">
+      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343805/htmlcssjs.png">
       <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343791/angular.png">
       <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343810/jQuery_gxav15.png">
       <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343822/python.png">
@@ -165,12 +165,56 @@
 
   <div class="container oneSix">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 certificates">
 
+        <h1 class="text-center lines">CERTIFICATES</h1>
+
+          <div class="col-md-4">
+            <div class="hoverCert">
+<a href="https://www.coursera.org/account/accomplishments/verify/CBEFMDER56" target="_blank">
+              <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949596/progevpython.jpg" alt="python intro certificate" />
+              <div class="overlayCert">
+                <h2>Programming for Everybody (Python)</h2>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+              <a href="https://www.coursera.org/account/accomplishments/verify/LN2C4EY75V" class="thumbnail" target="_blank">
+                <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1460950161/python1.jpg" alt="python certificate 1" />
+              </a>
+          </div>
+
+          <div class="col-md-4">
+              <a href="https://www.coursera.org/account/accomplishments/verify/2SGMVVV5CB" class="thumbnail" target="_blank">
+                <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949595/python2.jpg" alt="python certificate 2" />
+              </a>
+          </div>
+
+          <div class="col-md-4">
+              <a href="https://www.coursera.org/account/accomplishments/verify/T623SBQXEE" class="thumbnail" target="_blank">
+                <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949595/prinofcomp1.jpg" alt="principles of computing certificate 1" />
+              </a>
+          </div>
+
+          <div class="col-md-4">
+              <a href="https://www.coursera.org/account/accomplishments/verify/9MCE5JJVDB" class="thumbnail" target="_blank">
+                <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949595/prinofcomp2.jpg" alt="principles of computing certificate 2" />
+              </a>
+          </div>
+
+          <div class="col-md-4">
+              <a href="https://s3.amazonaws.com/verify.edx.org/downloads/f810e27235484907adb84cbd5151fd64/Certificate.pdf" class="thumbnail" target="_blank">
+                <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949593/cs50.jpg" alt="CS50 certificate" />
+              </a>
+          </div>
+
+          <!-- class="col-sm-12 certificates" -->
       </div>
-
+        <!-- row -->
     </div>
-
+    <!-- container -->
   </div>
 
 </section>
@@ -305,9 +349,58 @@
 <section id="page3" data-speed="8" data-type="background">
 
   <div class="container">
-    <div class="row-fluid">
 
-      <div class="col-xs-12 topper">
+    <div class="row">
+      <div class="col-sm-12 topper">
+        <h1 class="text-center"><b>I'm Interested.</b></h1>
+        <h3 class="text-center">Submit this form and lets chat!</h3>
+        <br>
+        <form class="form-horizontal" role="form" action="http://www.arsenycoding.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
+
+      	<input type="hidden" name="recipient" value="mikhalev@arsenycoding.com">
+
+      	<input type="hidden" name="subject" value="FormMail E-Mail">
+
+      	<div class="form-group">
+      		<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+      			<input type="text" name="name" value="" class="form-control input-lg formText" placeholder="Name">
+      		</div>
+
+      	</div><!-- form-group name -->
+
+      	<div class="form-group">
+
+      		<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+      			<input type="text" name="email" value="" class="form-control input-lg formText" placeholder="Email">
+      		</div>
+
+      	</div><!-- form-group email -->
+
+      	<div class="form-group">
+      		<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+      			<textarea name="comment" cols="50" rows="5" class="form-control input-lg formText" placeholder="What can I do for you?"></textarea>
+      		</div>
+
+      	</div><!-- form-group message -->
+
+      	<div class="form-group">
+      		<div class="text-center">
+      			<input type="button" value="E-Mail Me!" class="btn btn-xlarge btn-success" onclick="hgsubmit();">
+      		</div>
+
+      	</div><!-- form-group button -->
+
+      	<input type="hidden" name="redirect" value="http://www.arsenycoding.com">
+      </form>
+
+      </div>
+      <!-- col-xs-12 -->
+    </div>
+    <!-- row contact from -->
+
+    <div class="row">
+
+      <div class="col-xs-12">
 
         <div class="page-header text-center contact well">
 
@@ -333,9 +426,9 @@
       </div>
       <!-- col-sm-12 -->
     </div>
-    <!-- container -->
+    <!-- row -->
   </div>
-  <!-- row-fluid -->
+  <!-- container -->
 
 </section>
 

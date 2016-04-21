@@ -126,7 +126,7 @@ nav.navtop.navbar.shrink a {
 
 #page2 {
   background: url('http://res.cloudinary.com/amikhalev/image/upload/v1461039736/damask_vignette.jpg') center center / cover fixed;
-  /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);*/
+  /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.8) */
   padding: 23em 0 5em 0;
   margin: 0px;
 }

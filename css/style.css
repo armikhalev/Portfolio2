@@ -1,9 +1,19 @@
+/*fonts*/
+@font-face {
+  font-family: 'basic title font';
+  src: local('basic title font');
+}
+
 /* Change the link color on hover */
 
 .navtop li:hover,
 .nav.navbar-nav li a:hover,
 .navbar .navbar-brand:hover {
   background-color: #000;
+  color: #9ee340;
+}
+
+.nav-footer a:hover {
   color: #9ee340;
 }
 
@@ -76,7 +86,7 @@ nav.navtop.navbar.shrink a {
 }
 
 .lines {
-  font-family: 'Open Sans Condensed';
+  font-family: 'basic title font';
   font-weight: lighter;
   font-size: 5vw;
 }
@@ -104,6 +114,10 @@ nav.navtop.navbar.shrink a {
 #page1_5_first_row img {
   margin-left: .1em;
   margin-right: .1em;
+}
+
+#certificate_gap {
+  margin-bottom: 2em;
 }
 
 #pageOneSix {
@@ -231,6 +245,7 @@ color: #5C5555 !important;
 }
 
 .social i {
+  color: #5cb85c;
   padding: .5em;
   font-size: 5em;
   width: 2em;
@@ -242,7 +257,7 @@ color: #5C5555 !important;
 }
 
 .social i:hover {
-  color: #f00;
+  color: #9ee340;
 }
 
 .avatar {
@@ -395,12 +410,12 @@ footer {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 100px;
-  background-color: #404040;
+  height: 200px;
+  background: url("http://res.cloudinary.com/amikhalev/image/upload/v1461547637/bottom_banner.jpg") center center / cover no-repeat fixed;
   color: #ffa;
 }
 .copyrt{
-  padding-top: 35px;
+  padding-top: 5em;
 }
 
 footer li{
@@ -410,7 +425,7 @@ footer li{
 
 footer a{
   display: block;
-  padding: 35px 15px;
+  padding: 5em 15px;
   color: #fff;
 }
 footer a:hover{
@@ -430,6 +445,10 @@ footer a:hover{
      border-color: transparent;
 }
 
+.navbar-custom {
+  height: 5em;
+  width: 1em;
+}
 
 #page0 {
   background: url('http://res.cloudinary.com/amikhalev/image/upload/v1460258896/small_main_banner.png') center center / cover no-repeat fixed;

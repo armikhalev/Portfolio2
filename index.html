@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
   <head>
 
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="description" content="Arseny Mikhalev's Portfolio Website">
     <meta name="keywords" content="arseny, mikhalev, portfolio, web-developer, front-end">
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans+Condensed:300,700|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300%7COpen+Sans+Condensed:300,700%7CRoboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <!-- styles -->
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
@@ -28,8 +28,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
 
-          </button>
-
+      </button>
+      <a class="navbar-brand" href="#home"><img src="./images/logo.png" style="height: 2em; margin-top: -.4em;"></a>
     </div>
     <!-- "navbar-header" -->
 
@@ -60,7 +60,7 @@
 <section id="page0" data-speed="14" data-type="background">
 
   <div class="container">
-    <div class="row-fluid text-center welcome" id="wlcm">
+    <div class="row text-center welcome" id="wlcm">
 
       <h2>Building beautiful websites</h2>
       <h2>on the foundation of elegant code</h2>
@@ -92,30 +92,13 @@
 
             <h3><b>Hi and thanks for stopping by!</b></h3>
 
-        		<p>My name is Arseny and I am a highly motivated self-taught web
+            <p>My name is Arseny and I am a highly motivated self-taught web
 
-        		developer who loves building attractive, functional and dynamic web and mobile applications.</p>
+            developer who loves building attractive, functional and dynamic web and mobile applications.</p>
+            <p>I always strive to use the most contemporary technologies for my projects and I love projects that challenge my
 
-        		<p>I always
-
-        		strive to use the most contemporary technologies for my projects and I love projects that challenge my
-
-        		problem-solving skills.</p>
-
-        		<p>While every day I try to learn something new, so far my skills include:</p>
-
-        		<p><b>Javascript, jQuery, HTML5, CSS3,</b></p>
-        		<p><b>Bootstrap3, Wordpress, Django, Flask, CodeIgniter,</b></p>
-        		<p><b>Python, PHP, C,</b></p>
-
-        		<p><b>Kiwi</b>, as well as familiarity with <b>Java</b>, <b>AngularJS</b>, and <b>Android</b>.</p>
-
-        		<p>My tools and expertise include:</p>
-
-        		<p><b>Github, Responsive Web Design</b>, and <b>Linux</b>.</p>
-
-        		<p>Using my tools and knowledge, I’ve already created several applications.</p>
-        		<p>Please take a look below!</p>
+            problem-solving skills.</p>
+            <p>Please take a look around and see what I can do for you!</p>
 
         </div>
         <!-- class="col-sm-6" -->
@@ -171,7 +154,7 @@
 
         <h1 class="text-center lines">CERTIFICATES</h1>
 
-        <div class="row">
+        <div class="row" id="certificate_gap">
           <div class="col-md-4">
             <div class="hoverCert">
               <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949596/progevpython.jpg" alt="python intro certificate" />
@@ -413,9 +396,9 @@
         <h1 class="text-center"><b>Questions? Comments?</b></h1>
         <h3 class="text-center">Fill out this form and I'll get back to you!</h3>
         <br>
-        <div class="container">
+        <div class="container-fluid">
 
-          <form class="form-horizontal" role="form" action="http://www.arsenycoding.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
+          <form class="form-horizontal" action="http://www.arsenycoding.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
 
         	<input type="hidden" name="recipient" value="mikhalev@arsenycoding.com">
 
@@ -464,14 +447,14 @@
 
       <div class="col-xs-12">
 
-        <div class="page-header text-center contact well">
+        <div class="text-center contact">
 
-          <h1>Contact me at:</h1>
+          <!-- <h1>Contact me at:</h1> -->
           <h4><span class="glyphicon glyphicon-envelope"></span> armikhalev@gmail.com</h4>
 
           <div class="social text-center">
 
-            <a href="https://www.facebook.com/arseny.mikhalev" target='_blank'><i class="fa fa-lg fa-facebook"></i>
+            <a href="https://www.facebook.com/arseny.mikhalev" target='_blank'><i class="fa fa-lg fa-facebook"></i></a>
 
           <a href="https://github.com/armikhalev"  target='_blank'><i class="fa fa-lg fa-github"></i></a>
 
@@ -502,11 +485,11 @@
 
   <div class="copyrt col-xs-6">
     <p>
-      Copyright &copy Arseny Mikhalev 2015. All Rights Reserved</p>
+      Copyright &copy; Arseny Mikhalev 2015. All Rights Reserved</p>
   </div>
   <!-- col-xs-6 -->
 
-  <div class="hidden-xs col-xs-6">
+  <div class="hidden-xs col-xs-6 nav-footer">
     <ul>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#portfolio">Portfolio</a></li>

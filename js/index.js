@@ -3,8 +3,12 @@ $(document).ready(function() {
   // cache the window object
   $window = $(window);
 
+  // smooth floating up welcome message
   $("#wlcm").addClass("up");
+  // hide arrow up on load
+  $('#arrow-up').fadeOut();
 
+  // Parallax effect
   $('section[data-type="background"]').each(function() {
     // declare the variable to affect the defined data-type
     var $scroll = $(this);
@@ -25,13 +29,35 @@ $(document).ready(function() {
 
   // shrinks navbar
   $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
-    $('nav').addClass('shrink');
-  } else {
-    $('nav').removeClass('shrink');
-  }
-});
+    if ($(document).scrollTop() > 50) {
+      $('nav').addClass('shrink');
+      $('#arrow-up').fadeIn();
+    } else {
+      $('nav').removeClass('shrink');
+      $('#arrow-up').fadeOut();
+    }
+  });
+  //
 
+      $(window).scroll(function(){
+
+          if($(this).scrollTop() >= $('.footer').position().top - 650) {
+              $("#arrow-up").css("background","red");
+          } else if($(this).scrollTop() >= $('.grey-blue-line').position().top + 250){
+              $("#arrow-up").css("background","none");
+          } else if($(this).scrollTop() >= $('.grey-blue-line').position().top - 650){
+              $("#arrow-up").css("background","blue");
+
+          // change arrow up on .grey-line
+          }else if($(this).scrollTop() >= $('.grey-line').position().top - 450){
+              $("#arrow-up").css("background","none");
+          } else if($(this).scrollTop() >= $('.grey-line').position().top - 640){
+              $("#arrow-up").css("background","black");
+
+          }else{
+            $("#arrow-up").css("background","none");
+          }
+      });
 
 // smooth navigation effect
 $(function() {

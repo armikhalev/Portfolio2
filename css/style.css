@@ -74,7 +74,7 @@ nav.navtop.navbar.shrink a {
 
 .green-line {
   background-color: #9ee340;
-  box-shadow: -1em 0 15em #000;
+  box-shadow: 0 -2em 50px rgba(0, 0, 0, 0.8);
   padding: 2em;
 }
 
@@ -143,11 +143,12 @@ nav.navtop.navbar.shrink a {
   /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.8) */
   padding: 23em 0 5em 0;
   margin: 0px;
+  box-shadow: inset 0 5em 50px rgba(0, 0, 0, 0.8)
 }
 
 #page3 {
   /*background: url('http://res.cloudinary.com/amikhalev/image/upload/v1455836511/milk_and_coffee.jpg') fixed;*/
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 -5em 50px rgba(0, 0, 0, 0.8);
   padding: 25em 0 25em 0;
   margin: 0px;
 }
@@ -413,27 +414,28 @@ footer {
   height: 200px;
   background: url("http://res.cloudinary.com/amikhalev/image/upload/v1461547637/bottom_banner.jpg") center center / cover no-repeat fixed;
   color: #ffa;
+  z-index: -1;
+  box-shadow: inset 0 5em 50px rgba(0, 0, 0, .8);
 }
 .copyrt{
   padding-top: 5em;
 }
 
-footer li{
-  display: inline;
-  float: right;
+.arrow-up{
+  position: fixed;
 }
 
-footer a{
-  display: block;
-  padding: 5em 15px;
-  color: #fff;
+#arrow-up{
+  position: absolute;
+  margin-top: -1vw;
+  margin-left: 2.5vw;
 }
-footer a:hover{
-  color: #0099CC;
+
+#arrow-up:hover{
+  -webkit-filter: invert(100%); filter: invert(100%);
 }
 
 @media only screen and (max-width: 768px){
-  /******************************/
 
 .copyrt{
   padding: 5px;

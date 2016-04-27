@@ -124,6 +124,7 @@ nav.navtop.navbar.shrink a {
   background-image: linear-gradient(#fff, #b5b5b5);
   padding: 0 0 10em 0;
   margin-bottom: -2em;
+  box-shadow: 0 -2em 50px rgba(0, 0, 0, 0.4);
 }
 
 .certificates h1 {
@@ -143,13 +144,13 @@ nav.navtop.navbar.shrink a {
   /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.8) */
   padding: 23em 0 5em 0;
   margin: 0px;
-  box-shadow: inset 0 5em 50px rgba(0, 0, 0, 0.8)
+  box-shadow: inset 0 2em 50px rgba(0, 0, 0, 0.8)
 }
 
 #page3 {
   /*background: url('http://res.cloudinary.com/amikhalev/image/upload/v1455836511/milk_and_coffee.jpg') fixed;*/
-  box-shadow: 0 -5em 50px rgba(0, 0, 0, 0.8);
-  padding: 25em 0 25em 0;
+  box-shadow: 0 -2em 50px rgba(0, 0, 0, 0.8);
+  padding: 25em 0 13em 0;
   margin: 0px;
 }
 
@@ -201,7 +202,9 @@ color: #5C5555 !important;
 
 /************* Content ***************/
 .welcome {
-  font-family: 'Pacifico', cursive;
+  /*font-family: 'Alegreya Sans', sans-serif;*/
+  font-weight: 100;
+  text-shadow: 0 3px 5px #000;
   color: #fff;
   font-size: 9vw;
 
@@ -227,6 +230,9 @@ color: #5C5555 !important;
 
 .topper {
   margin-top: -23em;
+}
+.topper2 {
+    margin-top: -21em;
 }
 
 .well.zero {
@@ -278,20 +284,16 @@ color: #5C5555 !important;
   /*font-family: 'Pacifico', cursive;*/
 }
 
-.contact h1 {
+.contact h2 {
   color: #000;
+  font-family: 'basic title font';
+  font-size: 5vw;
 }
 
 .formText {
   font-size: 23px;
   margin-top: 1.4em;
   height: 3em;
-}
-
-.projects {
-  margin-top: -23em;
-  padding: 1em;
-  position: relative;
 }
 
 .melasi {
@@ -411,14 +413,14 @@ footer {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 200px;
+  height: 100px;
   background: url("http://res.cloudinary.com/amikhalev/image/upload/v1461547637/bottom_banner.jpg") center center / cover no-repeat fixed;
-  color: #ffa;
+  color: #fff;
   z-index: -1;
-  box-shadow: inset 0 5em 50px rgba(0, 0, 0, .8);
+  box-shadow: inset 0 3em 50px rgba(0, 0, 0, .8);
 }
 .copyrt{
-  padding-top: 5em;
+  padding-top: 3.5em;
 }
 
 .arrow-up{

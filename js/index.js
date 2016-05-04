@@ -4,7 +4,7 @@ $(document).ready(function() {
   $window = $(window);
 
   // smooth floating up welcome message
-  $("#wlcm").addClass("up");
+  // $("#wlcm").addClass("up");
   // hide arrow up on load
   $('#arrow-up').fadeOut();
 
@@ -37,22 +37,22 @@ $(document).ready(function() {
       $('#arrow-up').fadeOut();
     }
   });
-  //
 
+      // arrow-up changing color
       $(window).scroll(function(){
 
           if($(this).scrollTop() >= $('.footer').position().top - 650) {
-              $("#arrow-up").css("background","red");
+              $("#arrow-up").css("background","#fff");
           } else if($(this).scrollTop() >= $('.grey-blue-line').position().top + 250){
               $("#arrow-up").css("background","none");
           } else if($(this).scrollTop() >= $('.grey-blue-line').position().top - 650){
-              $("#arrow-up").css("background","blue");
+              $("#arrow-up").css("background","#fff");
 
           // change arrow up on .grey-line
           }else if($(this).scrollTop() >= $('.grey-line').position().top - 450){
               $("#arrow-up").css("background","none");
           } else if($(this).scrollTop() >= $('.grey-line').position().top - 640){
-              $("#arrow-up").css("background","black");
+              $("#arrow-up").css("background","#fff");
 
           }else{
             $("#arrow-up").css("background","none");
@@ -77,6 +77,5 @@ $(function() {
   }); // 'a[href^="#"]'.click( function(e))
 
 }); // $function()
-
 
 }); // close out script

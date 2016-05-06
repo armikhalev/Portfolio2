@@ -1,616 +1,389 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<title>Portfolio</title>
+<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name=description content="Arseny Mikhalev's Portfolio Website">
+<meta name=keywords content="arseny, mikhalev, portfolio, web-developer, front-end">
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300%7COpen+Sans+Condensed:300,700%7CRoboto+Slab:400,100,300,700' rel=stylesheet type=text/css>
+<link rel='stylesheet prefetch' href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css>
+<link rel='stylesheet prefetch' href=https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css>
+<link rel=stylesheet href=css/style.min.css>
+<link rel=stylesheet href=css/animate.css>
+<script type="text/javascript">
+function hgsubmit()
+{
+if (/\S+/.test(document.hgmailer.name.value) == false) alert ("Please provide your name.");
+else if (/^\S+@[a-z0-9_.-]+\.[a-z]{2,6}$/i.test(document.hgmailer.email.value) == false) alert ("A valid email address is required.");
+ else if (/\S+/.test(document.hgmailer.comment.value) == false) alert ("Your email content is needed.");
+  else {
+       document.hgmailer.submit();
+       alert ('Thank you!\nYour email is sent.');
+       }
+}
+</script>
 
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="Arseny Mikhalev's Portfolio Website">
-    <meta name="keywords" content="arseny, mikhalev, portfolio, web-developer, front-end">
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300%7COpen+Sans+Condensed:300,700%7CRoboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <!-- styles -->
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-
-  </head>
-
-  <body style="position:relative" data-spy="scroll" data-target=".navbar" data-offset="50">
-<!-- Navigation -->
+</head>
+<body style=position:relative data-spy=scroll data-target=.navbar data-offset=50>
 <nav class="navbar navtop navbar-inverse navbar-fixed-top">
-  <div class="container">
-
-    <div class="navbar-header">
-
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-
-      </button>
-      <a class="navbar-brand" href="#home"><img src="./images/logo.png" style="height: 2em; margin-top: -.4em;"></a>
-    </div>
-    <!-- "navbar-header" -->
-
-    <div class="collapse navbar-collapse text-center" id="myNavbar">
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#myTools">My tools</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-    </div>
-    <!-- class="collapse navbar-collapse" id="myNavbar" -->
-  </div>
-  <!-- class="container-fluid" -->
-
+<div class=container>
+<div class=navbar-header>
+<button type=button class=navbar-toggle data-toggle=collapse data-target=#myNavbar>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=#home><img src=./images/logo.png style=height:2em;margin-top:-.4em></a>
+</div>
+<div class="collapse navbar-collapse text-center" id=myNavbar>
+<ul class="nav navbar-nav navbar-right">
+<li><a href=#home>Home</a></li>
+<li><a href=#about>About</a></li>
+<li><a href=#myTools>My tools</a></li>
+<li><a href=#certifications>Certifications</a></li>
+<li><a href=#portfolio>Portfolio</a></li>
+<li><a href=#contact>Contact</a></li>
+</ul>
+</div>
+</div>
 </nav>
-<!-- Navbar Ends -->
-
-<!-- Here starts the content -->
-<div id="home"></div>
-<!-- Section 0 -->
-<section id="page0" data-speed="14" data-type="background">
-
-  <div class="container">
-    <div class="row text-center welcome wow slideInUp" id="wlcm">
-      <h1 class="hidden-sm hidden-md hidden-lg mobile-header">ARSENY MIKHALEV</h1>
-      <h2>Building beautiful websites</h2>
-      <h2>on the foundation of elegant code</h2>
-
-    </div>
-    <!-- end of row -->
-
-      <a href="#about">
-        <img class="img-responsive center-block arrow-down" src='http://res.cloudinary.com/amikhalev/image/upload/c_scale,e_fill_light,w_77/v1460325472/arrow_down.png' alt="arrow-down">
-      </a>
-
-  </div>
-  <!-- end of container -->
-  <!-- arrow-up -->
-  <div class="arrow-up col-xs-offset-10 col-sm-offset-11 col-md-offset-11 col-lg-offset-11 col-xs-1 col-sm-1 col-md-1 pull-right">
-    <a href="#home"  id="arrow-up"><img src="./images/arrow_up.png" alt="arrow up" /></a>
-  </div>
-  <!-- end of arrow-up -->
+<div id=home></div>
+<section id=page0 data-speed=14 data-type=background>
+<div class=container>
+<div class="row text-center welcome wow slideInUp" id=wlcm>
+<h1 class="hidden-sm hidden-md hidden-lg mobile-header">ARSENY MIKHALEV</h1>
+<h1 id="myName" class="mobile-header"></h1>
+<h2>Building beautiful websites</h2>
+<h2>on the foundation of elegant code</h2>
+</div>
+<a href=#about>
+<img class="img-responsive center-block arrow-down" src=http://res.cloudinary.com/amikhalev/image/upload/c_scale,e_fill_light,w_77/v1460325472/arrow_down.png alt=arrow-down>
+</a>
+</div>
+<div class="arrow-up col-xs-offset-10 col-sm-offset-11 col-md-offset-11 col-lg-offset-11 col-xs-1 col-sm-1 col-md-1 pull-right">
+<a href=#home id=arrow-up><img src=./images/arrow_up.png alt="arrow up" /></a>
+</div>
 </section>
-
-
-
-<!-- green line between two sections  -->
-<div class="green-line"  id="about"></div>
-
-<!-- Section 1 -->
-
-<section id="page1" data-speed="12" data-type="background">
-
-  <div class="container">
-    <div class="row-fluid">
-
-      <div class="col-sm-12 topper">
-        <div class="col-xs-offset-1 col-sm-5 lead text-justify about">
-
-            <h3 class="wow slideInLeft"><b>Hi and thanks for stopping by!</b></h3>
-            <div class="wow slideInUp">
-              <p>My name is Arseny and I am a highly motivated self-taught web
-
-              developer who loves building attractive, functional and dynamic web and mobile applications.</p>
-              <p>I always strive to use the most contemporary technologies for my projects and I love projects that challenge my
-
-              problem-solving skills.</p>
-              <p>Please take a look around and see what I can do for you!</p>
-            </div>
-
-        </div>
-        <!-- class="col-sm-6" -->
-
-        <div class="hidden-xs col-sm-6">
-
-          <p><img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343647/arsenythinksgrey.png" class="img-thumbnail img-responsive avatar wow slideInRight" alt="Arseny Mikhalev's photo"></p>
-
-        </div>
-        <!-- col-sm-6 -->
-      </div>
-      <!-- col-sm-12 -->
-    </div>
-    <!-- container -->
-  </div>
-  <!-- row-fluid -->
+<div class=green-line id=about></div>
+<section id=page1 data-speed=12 data-type=background>
+<div class=container>
+<div class=row-fluid>
+<div class="col-sm-12 topper">
+<div class="col-xs-offset-1 col-sm-5 lead text-justify about">
+<h3 class="wow slideInLeft"><b>Hi and thanks for stopping by!</b></h3>
+<div class="wow slideInUp">
+<p>My name is Arseny and I am a highly motivated self-taught web
+developer who loves building attractive, functional and dynamic web and mobile applications.</p>
+<p>I always strive to use the most contemporary technologies for my projects and I love projects that challenge my
+problem-solving skills.</p>
+<p>Please take a look around and see what I can do for you!</p>
+</div>
+</div>
+<div class="hidden-xs col-sm-6">
+<p><img src=http://res.cloudinary.com/amikhalev/image/upload/c_scale,q_48,w_300/v1460343647/arsenythinksgrey.png class="img-thumbnail img-responsive avatar wow slideInRight" alt="Arseny Mikhalev's photo"></p>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- grey line between two sections  -->
-<div class="grey-line" id="myTools"><h3 class="text-center lines">BUILDING WITH THE BEST TOOLS</h3></div>
-
-<!-- Section 1.5 -->
-
+<div class=grey-line id=myTools><h3 class="text-center lines">BUILDING WITH THE BEST TOOLS</h3></div>
 <section id="pageOneHalf">
-  <div class="container-fluid text-center">
-    <div class="row wow bounceInLeft" id="page1_5_first_row">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343805/htmlcssjs.png" alt="sign html, css, js">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343791/angular.png" alt="sign angularjs">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343810/jQuery_gxav15.png" alt="sign jquery">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343822/python.png" alt="sign python">
-    </div>
-    <div class="row wow bounceInRight">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343799/django.png" alt="sign django">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343796/bootstrap.png" alt="sign bootstrap">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343835/wordpress.png" alt="sign wordpress">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343818/php.png" alt="sign php">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343814/mysql.png" alt="sign mysql">
-      <img src="http://res.cloudinary.com/amikhalev/image/upload/v1460343826/responsivewebdesign.png" alt="sign responsive web design">
-    </div><!-- row   -->
-
-  </div><!-- container   -->
-
+<div class="container-fluid">
+<div class="row wow bounceInLeft">
+<img class="htmlCssJs img-responsive col-xs-6 col-sm-3 col-lg-offset-2 col-lg-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343805/htmlcssjs.png alt="sign html, css, js">
+<img class="img-responsive col-xs-6 col-sm-3 col-lg-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343791/angular.png alt="sign angularjs">
+<img class="img-responsive col-xs-6 col-sm-3 col-lg-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343810/jQuery_gxav15.png alt="sign jquery">
+<img class="img-responsive col-xs-6 col-sm-3 col-lg-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343822/python.png alt="sign python">
+</div>
+<div class="row wow bounceInRight" id="secondToolsRow">
+<img class="img-responsive col-xs-6 col-sm-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343799/django.png alt="sign django">
+<img class="img-responsive col-xs-6 col-sm-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343796/bootstrap.png alt="sign bootstrap">
+<img class="img-responsive col-xs-6 col-sm-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343835/wordpress.png alt="sign wordpress">
+<img class="img-responsive col-xs-6 col-sm-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343818/php.png alt="sign php">
+<img class="img-responsive hidden-xs col-sm-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343814/mysql.png alt="sign mysql">
+<img class="img-responsive hidden-xs col-sm-2" src=http://res.cloudinary.com/amikhalev/image/upload/v1460343826/responsivewebdesign.png alt="sign responsive web design">
+</div>
+</div>
 </section>
-
-<!-- Section 1.6 -->
-<section id="pageOneSix">
-
-  <div class="container oneSix"  id="certifications">
-
-      <div class="certificates">
-
-        <h1 class="text-center lines">CERTIFICATES</h1>
-
-          <div class="col-sm-4">
-            <div class="hoverCert">
-              <img class="img-responsive gap" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949596/progevpython.jpg" alt="python intro certificate" />
-              <a href="https://www.coursera.org/account/accomplishments/verify/CBEFMDER56" target="_blank">
-
-              <div class="overlayCert">
-                <h2>Programming for Everybody (Python)</h2>
-              </div>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="hoverCert">
-              <img class="img-responsive gap" src="http://res.cloudinary.com/amikhalev/image/upload/v1460950161/python1.jpg" alt="python certificate 1" />
-              <a href="https://www.coursera.org/account/accomplishments/verify/LN2C4EY75V" target="_blank">
-
-                <div class="overlayCert">
-                  <h2>An Introduction to Interactive Programming in Python (Part 1)</h2>
-                </div>
-
-              </a>
-
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="hoverCert">
-              <img class="img-responsive gap" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949595/python2.jpg" alt="python certificate 2" />
-              <a href="https://www.coursera.org/account/accomplishments/verify/2SGMVVV5CB" target="_blank">
-
-                <div class="overlayCert">
-                  <h2>An Introduction to Interactive Programming in Python (Part 2)</h2>
-                </div>
-
-              </a>
-
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="hoverCert">
-              <img class="img-responsive gap" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949595/prinofcomp1.jpg" alt="principles of computing certificate 1" />
-              <a href="https://www.coursera.org/account/accomplishments/verify/T623SBQXEE" target="_blank">
-
-                <div class="overlayCert">
-                  <h2>Principles of Computing (Part 1)</h2>
-                </div>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="hoverCert">
-              <img class="img-responsive gap" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949595/prinofcomp2.jpg" alt="principles of computing certificate 2" />
-              <a href="https://www.coursera.org/account/accomplishments/verify/9MCE5JJVDB" target="_blank">
-
-                <div class="overlayCert">
-                  <h2>Principles of Computing (Part 2)</h2>
-                </div>
-
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="hoverCert">
-              <img class="img-responsive gap" src="http://res.cloudinary.com/amikhalev/image/upload/v1460949593/cs50.jpg" alt="CS50 certificate" />
-              <a href="https://s3.amazonaws.com/verify.edx.org/downloads/f810e27235484907adb84cbd5151fd64/Certificate.pdf" target="_blank">
-
-                <div class="overlayCert">
-                  <h2>CS50: Introduction to Computer Science</h2>
-                </div>
-
-              </a>
-            </div>
-          </div>
-
-      </div>
-        <!-- class="col-sm-12 certificates" -->
+<section id=pageOneSix>
+<div class="container" id=certifications>
+<div class=certificates>
+<h3 class="text-center lines">CERTIFICATES</h3>
+<div class="col-sm-4">
+<div class=hoverCert>
+<img class="img-responsive gap" src=http://res.cloudinary.com/amikhalev/image/upload/v1460949596/progevpython.jpg alt="python intro certificate" />
+<a href=https://www.coursera.org/account/accomplishments/verify/CBEFMDER56 target=_blank>
+<div class=overlayCert>
+<h2>Programming for Everybody (Python)</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-sm-4">
+<div class=hoverCert>
+<img class="img-responsive gap" src=http://res.cloudinary.com/amikhalev/image/upload/v1460950161/python1.jpg alt="python certificate 1" />
+<a href=https://www.coursera.org/account/accomplishments/verify/LN2C4EY75V target=_blank>
+<div class=overlayCert>
+<h2>An Introduction to Interactive Programming in Python (Part 1)</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-sm-4">
+<div class=hoverCert>
+<img class="img-responsive gap" src=http://res.cloudinary.com/amikhalev/image/upload/v1460949595/python2.jpg alt="python certificate 2" />
+<a href=https://www.coursera.org/account/accomplishments/verify/2SGMVVV5CB target=_blank>
+<div class=overlayCert>
+<h2>An Introduction to Interactive Programming in Python (Part 2)</h2>
+</div>
+</a>
+</div>
+</div>
 
 
-  </div>
-<!-- container -->
+<div class="col-sm-4">
+<div class=hoverCert>
+<img class="img-responsive gap" src=http://res.cloudinary.com/amikhalev/image/upload/v1460949595/prinofcomp1.jpg alt="principles of computing certificate 1" />
+<a href=https://www.coursera.org/account/accomplishments/verify/T623SBQXEE target=_blank>
+<div class=overlayCert>
+<h2>Principles of Computing (Part 1)</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-sm-4">
+<div class=hoverCert>
+<img class="img-responsive gap" src=http://res.cloudinary.com/amikhalev/image/upload/v1460949595/prinofcomp2.jpg alt="principles of computing certificate 2" />
+<a href=https://www.coursera.org/account/accomplishments/verify/9MCE5JJVDB target=_blank>
+<div class=overlayCert>
+<h2>Principles of Computing (Part 2)</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-sm-4">
+<div class=hoverCert>
+<img class="img-responsive gap" src=http://res.cloudinary.com/amikhalev/image/upload/v1460949593/cs50.jpg alt="CS50 certificate" />
+<a href=https://s3.amazonaws.com/verify.edx.org/downloads/f810e27235484907adb84cbd5151fd64/Certificate.pdf target=_blank>
+<div class=overlayCert>
+<h2>CS50: Introduction to Computer Science</h2>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- grey-blue-line -->
-<div class="grey-blue-line" id="portfolio"><h3 class="text-center lines">FEATURED WORKS</h3></div>
-
-<!-- Section 2 -->
-
-<section id="page2" data-speed="10" data-type="background">
-
-  <div class="container-fluid">
-    <!-- <div class="row"> -->
-
-      <div class="topper2">
-
-        <div class="hidden-sm hidden-md hidden-lg">
-          <!-- page-header text-center portfolio -->
-
-              <div class="col-xs-6 melasi">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031861/Melasi_rama.png" alt="website melasi.pythonanywhere.com">
-
-                  <a href="http://melasi.pythonanywhere.com" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4  -->
-
-              <div class="col-xs-6 masterMixer">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031862/masterMixer_rama.png" alt="master Mixer web application">
-                  <a href="http://mastermixer.x10.mx" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4  -->
-
-
-              <div class="col-xs-6 videoblesk">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031859/VideoBlesk_rama.png" alt="website videoblesk.com">
-                  <a href="http://www.videoblesk.com" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4  -->
-
-              <div class="col-xs-6 crispythoughts">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461037227/CrispyThoughts_rama.png" alt="website crispythoughts.com">
-
-                  <a href="http://www.crispythoughts.com" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-3 crispythoughts  -->
-
-
-              <div class="col-xs-6 arsenycoding">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031859/Portfolio_rama.png" alt="website arsenycoding.com">
-
-                  <a href="http://www.arsenycoding.com">
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4 arsenycoding -->
-
-              <div class="col-xs-offset-1 col-xs-4 translator">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031855/Mela_rama.png" alt="English-Mela translator Android App">
-
-                  <a href="https://play.google.com/store/apps/details?id=org.test.engmeltrans" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4  translator -->
-
-        </div>
-        <!-- mobile version -->
-
-        <!-- medium and larg devices starts -->
-        <div class="hidden-xs">
-
-          <!-- page-header text-center portfolio -->
-            <div class="row">
-              <div class="col-sm-3 melasi">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031861/Melasi_rama.png" alt="website melasi.pythonanywhere.com">
-
-                  <a href="http://melasi.pythonanywhere.com" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4  -->
-
-              <div class="col-sm-3 masterMixer">
-
-                <div class="hovereffect">
-                  <img class="img-responsive wow swing" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031862/masterMixer_rama.png" alt="master Mixer web application">
-                  <a href="http://mastermixer.x10.mx" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4  -->
-
-
-              <div class="col-sm-3 videoblesk">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031859/VideoBlesk_rama.png" alt="website videoblesk.com">
-                  <a href="http://www.videoblesk.com" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4  -->
-
-            </div>
-            <!-- row -->
-
-            <div class="row rowLower">
-
-              <div class="col-sm-3 crispythoughts">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461037227/CrispyThoughts_rama.png" alt="website crispythoughts.com">
-
-                  <a href="http://www.crispythoughts.com" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-3 crispythoughts  -->
-
-
-              <div class="col-sm-4 arsenycoding">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031859/Portfolio_rama.png" alt="website arsenycoding.com">
-
-                  <a href="http://www.arsenycoding.com">
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4 arsenycoding -->
-
-              <div class="col-sm-2 translator">
-
-                <div class="hovereffect">
-                  <img class="img-responsive" src="http://res.cloudinary.com/amikhalev/image/upload/v1461031855/Mela_rama.png" alt="English-Mela translator Android App">
-
-                  <a href="https://play.google.com/store/apps/details?id=org.test.engmeltrans" target='_blank'>
-
-                    <div class="overlay">
-                      <h2>Click me</h2>
-                    </div>
-
-                  </a>
-                </div>
-                <!-- hovereffect -->
-              </div>
-              <!-- col-xs-4  translator -->
-            </div>
-            <!-- row lower row -->
-
-        </div>
-        <!-- medium and large devices -->
-
-      </div>
-      <!-- topper2 -->
-  </div>
-  <!-- container -->
-
+<div class=grey-blue-line id=portfolio><h3 class="text-center lines">FEATURED WORKS</h3></div>
+<section id=page2 data-speed=10 data-type=background>
+<div class=container-fluid>
+<div class=topper2>
+<div class="hidden-sm hidden-md hidden-lg">
+<div class="col-xs-6 melasi">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031861/Melasi_rama.png alt="website melasi.pythonanywhere.com">
+<a href=http://melasi.pythonanywhere.com target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 masterMixer">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031862/masterMixer_rama.png alt="master Mixer web application">
+<a href=http://mastermixer.x10.mx target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 videoblesk">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031859/VideoBlesk_rama.png alt="website videoblesk.com">
+<a href=http://www.videoblesk.com target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 crispythoughts">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461037227/CrispyThoughts_rama.png alt="website crispythoughts.com">
+<a href=http://www.crispythoughts.com target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-6 arsenycoding">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031859/Portfolio_rama.png alt="website arsenycoding.com">
+<a href=http://www.arsenycoding.com>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-xs-offset-1 col-xs-4 translator">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031855/Mela_rama.png alt="English-Mela translator Android App">
+<a href="https://play.google.com/store/apps/details?id=org.test.engmeltrans" target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class=hidden-xs>
+<div class=row>
+<div class="col-sm-3 melasi">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031861/Melasi_rama.png alt="website melasi.pythonanywhere.com">
+<a href=http://melasi.pythonanywhere.com target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-sm-3 masterMixer">
+<div class=hovereffect>
+<img class="img-responsive wow swing" src=http://res.cloudinary.com/amikhalev/image/upload/v1461031862/masterMixer_rama.png alt="master Mixer web application">
+<a href=http://mastermixer.x10.mx target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-sm-3 videoblesk">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031859/VideoBlesk_rama.png alt="website videoblesk.com">
+<a href=http://www.videoblesk.com target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="row rowLower">
+<div class="col-sm-3 crispythoughts">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461037227/CrispyThoughts_rama.png alt="website crispythoughts.com">
+<a href=http://www.crispythoughts.com target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-sm-4 arsenycoding">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031859/Portfolio_rama.png alt="website arsenycoding.com">
+<a href=http://www.arsenycoding.com>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+<div class="col-sm-2 translator">
+<div class=hovereffect>
+<img class=img-responsive src=http://res.cloudinary.com/amikhalev/image/upload/v1461031855/Mela_rama.png alt="English-Mela translator Android App">
+<a href="https://play.google.com/store/apps/details?id=org.test.engmeltrans" target=_blank>
+<div class=overlay>
+<h2>Click me</h2>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<div id="contact"></div>
-<!-- Section 3 -->
-<section id="page3" data-speed="8" data-type="background">
-
-  <div class="container">
-
-    <div class="row">
-      <div class="col-sm-12 contact topper">
-        <h2 class="text-center">&nbsp;Questions? Comments?</h2>
-        <h3 class="text-center">Fill out this form and I'll get back to you!</h3>
-        <br>
-        <div class="container-fluid">
-
-          <form class="form-horizontal" action="http://www.arsenycoding.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
-
-        	<input type="hidden" name="recipient" value="mikhalev@arsenycoding.com">
-
-        	<input type="hidden" name="subject" value="FormMail E-Mail">
-
-        	<div class="form-group">
-        		<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
-        			<input type="text" name="name" value="" class="form-control input-lg formText" placeholder="Name">
-        		</div>
-
-        	</div><!-- form-group name -->
-
-        	<div class="form-group">
-
-        		<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
-        			<input type="text" name="email" value="" class="form-control input-lg formText" placeholder="Email">
-        		</div>
-
-        	</div><!-- form-group email -->
-
-        	<div class="form-group">
-        		<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
-        			<textarea name="comment" cols="50" rows="5" class="form-control input-lg formText" placeholder="What can I do for you?"></textarea>
-        		</div>
-
-        	</div><!-- form-group message -->
-
-        	<div class="form-group">
-        		<div class="text-center">
-        			<input type="button" value="Send" class="btn btn-xlarge btn-success" onclick="hgsubmit();">
-        		</div>
-
-        	</div><!-- form-group button -->
-
-        	<input type="hidden" name="redirect" value="http://www.arsenycoding.com">
-        </form>
-
-        </div>
-        <!-- container inner -->
-      </div>
-      <!-- col-xs-12 -->
-    </div>
-    <!-- row contact from -->
-
-    <div class="row">
-
-      <div class="col-xs-12">
-
-        <div class="text-center contact">
-
-          <!-- <h1>Contact me at:</h1> -->
-          <h4><span class="glyphicon glyphicon-envelope"></span> armikhalev@gmail.com</h4>
-
-          <div class="social text-center">
-
-            <a href="https://www.facebook.com/arseny.mikhalev" target='_blank'><i class="fa fa-lg fa-facebook"></i></a>
-
-          <a href="https://github.com/armikhalev"  target='_blank'><i class="fa fa-lg fa-github"></i></a>
-
-            <a href="https://linkedin.com/in/arsenymikhalev" target='_blank'><i class="fa fa-lg fa-linkedin"></i></a>
-
-            <a href="https://plus.google.com/u/0/116244021911673811587/posts/p/pub" target='_blank'><i class="fa fa-lg fa-google-plus"></i></a>
- 	    <a href="http://www.freecodecamp.com/armikhalev" target='_blank'><i class="fa fa-lg fa-fire"></i></a>
-
-          </div>
-          <!--social -->
-
-        </div>
-        <!-- page-header -->
-      </div>
-      <!-- col-sm-12 -->
-    </div>
-    <!-- row -->
-  </div>
-  <!-- container -->
-
+<div id=contact></div>
+<section id=page3 data-speed=8 data-type=background>
+<div class=container>
+<div class=row>
+<div class="col-sm-12 contact topper">
+<h2 class=text-center>&nbsp;Questions? Comments?</h2>
+<h3 class=text-center>Fill out this form and I'll get back to you!</h3>
+<br>
+<div class=container-fluid>
+<form class=form-horizontal action=http://www.arsenycoding.com/cgi-sys/formmail.pl method=post name=hgmailer>
+<input type=hidden name=recipient value=mikhalev@arsenycoding.com>
+<input type=hidden name=subject value="FormMail E-Mail">
+<div class=form-group>
+<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+<input type=text name=name value class="form-control input-lg formText" placeholder=Name>
+</div>
+</div>
+<div class=form-group>
+<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+<input type=text name=email value class="form-control input-lg formText" placeholder=Email>
+</div>
+</div>
+<div class=form-group>
+<div class="col-sm-offset-3 col-sm-6 col-sm-offset-3">
+<textarea name=comment cols=50 rows=5 class="form-control input-lg formText" placeholder="What can I do for you?"></textarea>
+</div>
+</div>
+<div class=form-group>
+<div class=text-center>
+<input type=button value=Send class="btn btn-xlarge btn-success" onclick=hgsubmit()>
+</div>
+</div>
+<input type=hidden name=redirect value=http://www.arsenycoding.com>
+</form>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-xs-12>
+<div class="text-center contact">
+<h4><span class="glyphicon glyphicon-envelope"></span> armikhalev@gmail.com</h4>
+<div class="social text-center">
+<a href=https://www.facebook.com/arseny.mikhalev target=_blank><i class="fa fa-lg fa-facebook"></i></a>
+<a href=https://github.com/armikhalev target=_blank><i class="fa fa-lg fa-github"></i></a>
+<a href=https://linkedin.com/in/arsenymikhalev target=_blank><i class="fa fa-lg fa-linkedin"></i></a>
+<a href=https://plus.google.com/u/0/116244021911673811587/posts/p/pub target=_blank><i class="fa fa-lg fa-google-plus"></i></a>
+<a href=http://www.freecodecamp.com/armikhalev target=_blank><i class="fa fa-lg fa-fire"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- END of CONTENT -->
-
-<!-- Footer -->
 <footer class="container-fluid footer">
-
-  <div class="copyrt col-xs-6">
-    <p>
-      Copyright &copy; Arseny Mikhalev 2015. All Rights Reserved</p>
-  </div>
-
+<div class="copyrt col-xs-6">
+<p>
+Copyright &copy; Arseny Mikhalev 2015. All Rights Reserved</p>
+</div>
 </footer>
-
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-
-    <script src="js/index.js"></script>
-
-    <!-- WOW js -->
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-
-  </body>
+<script src=http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js></script>
+<script src=http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js></script>
+<script src=js/index.min.js></script>
+<script src=js/wow.min.js></script>
+<script>
+wow = new WOW(
+{
+boxClass:     'wow',
+animateClass: 'animated',
+offset:       0,
+mobile:       false,
+live:         true
+}
+);
+wow.init();
+</script>
+</body>
 </html>
